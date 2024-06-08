@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body,
+  input,
+  button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+  
+  body {
+    background:linear-gradient(to right, #f7cac9, #92a8d1);
+    color: var(--text-color);
+    transition: background-color .4s;
+  }
+  
+  input,
+  button {
+    border: none;
+    outline: none;
+  }
+  
+  h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--font-medium);
+    margin-top:5rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1220px;
+    margin-inline: 1.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .section {
+    padding-block: 5rem 1rem;
+  }
+  
+  .section__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    margin-bottom: 2rem;
+  }
+  
+  .main {
+    overflow: hidden; /* For animation ScrollReveal */
+  }
+
+
+.home__swiper{
+    margin:initial;
+}
+.home__container{
+    padding-top: 2.5rem;
+    row-gap:2.5rem;
+
+}
+
+.home__data{
+    text-align:center;
+}
+.home__title{
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+.home__description{
+    margin-bottom:2rem;
+}
+.home__images{
+    display:grid;
+}
+.home__article,
+.home__img{
+    width:400px;
+    transition:scale .4s;
+    
+}
+.home__article{
+    scale:.8;
+    box-shadow: 10px 20px 60px rgb(227, 226, 226);
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+    scale:1;
+}
+@media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .nav__link {
+      padding-inline: 1rem;
+    }
+  }
